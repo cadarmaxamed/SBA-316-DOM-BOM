@@ -5,10 +5,12 @@ body {
 }
 
 header {
-  background-color: #b08968;
-  color: black;
+  background-color: #b07156 ;
   padding: 1em;
+  top: 0;
   text-align: center;
+  position: fixed;
+  width: 100%;
 }
 
 nav {
@@ -28,7 +30,7 @@ nav a {
 main {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
+  justify-content: space-evenly;
   padding: 1em;
 }
 

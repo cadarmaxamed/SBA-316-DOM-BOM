@@ -1,2 +1,4 @@
-const Colorchange = document.getElementByClass("nav");
-Colorchange.style.background = "#a9927d"
+//cache at least one using selectElementByid
+const Colorchange = document.getElementsById("navigationbar");
+Colorchange.style.background = "red";
+
