@@ -1,12 +1,20 @@
 //cache at least one element using selectElementByid
-const Colorchange = document.selectElementsById("navigationbar");
-Colorchange.style.background = "red";
+const ColchangeEl = document.getElementbyId("changeColorBtn");
+ColchangeEl.style.backgroundColor = "light blue"
 
 //Cache at least one element using querySelector or querySelectorAll.
+
 
 // Use the parent-child-sibling relationship to navigate between elements at least once (firstChild, lastChild, parentNode, nextElementSibling, etc.).
 
 // Iterate over a collection of elements to accomplish some task.
+const destinations = document.querySelectorAll('.destination');
+    destinations.forEach(destination => {
+      // Add event listener to each destination
+      destination.addEventListener('click', () => {
+        alert(`Clicked on ${destination.querySelector('h2').textContent}`);
+      });
+    });
 
 // Use appendChild and/or prepend to add new elements to the DOM.
 
@@ -32,3 +40,26 @@ Colorchange.style.background = "red";
 // Commit frequently to the git repository.
 // Include a README file that contains a description of your application.
 // Level of effort displayed in creativity, presentation, and user experience.
+
+//Grabbed the body from DOM
+// let body = document.querySelector('body');
+// //Created 2 divs
+// let div1 = document.createElement('div');
+// let div2 = document.createElement('div');
+// //Created 2 lists
+// let ordered = document.createElement('ol');
+// let unordered = document.createElement('ul');
+// //created and appened 3 list items for each list
+// for (let i = 0; i < 3; i++) {
+//   let li1 = document.createElement('li');
+//   let li2 = document.createElement('li');
+//   ordered.appendChild(li1);
+//   unordered.appendChild(li2);
+// }
+// //Appeneded lists to div
+// div1.appendChild(ordered);
+// div2.appendChild(unordered);
+
+// //Appended divs to body
+// body.appendChild(div1);
+// body.appendChild(div2);

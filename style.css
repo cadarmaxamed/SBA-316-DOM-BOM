@@ -9,15 +9,15 @@ header {
   padding: 1em;
   top: 0;
   text-align: center;
-  position: fixed;
+  /* position: fixed; */
   width: 100%;
 }
 
 nav {
   display: flex;
   justify-content: center;
-  background-color: #b07156;
   padding: 0.5em;
+  /* background-color: #b07156; */
 }
 
 nav a {
