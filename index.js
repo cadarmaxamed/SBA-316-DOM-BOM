@@ -1,9 +1,11 @@
 //cache at least one element using selectElementByid
-const ColchangeEl = document.getElementbyId("changeColorBtn");
-ColchangeEl.style.backgroundColor = "light blue"
+let mainEl = document.getElementById("mainpage");
+console.log(mainEl);
+//ColchangeEl.style.backgroundColor = "light blue"
 
 //Cache at least one element using querySelector or querySelectorAll.
-
+let body = document.querySelector("body");
+body.style.backgroundColor = "beige";
 
 // Use the parent-child-sibling relationship to navigate between elements at least once (firstChild, lastChild, parentNode, nextElementSibling, etc.).
 
@@ -16,21 +18,28 @@ const destinations = document.querySelectorAll('.destination');
       });
     });
 
-// Use appendChild and/or prepend to add new elements to the DOM.
-
+// // Use appendChild and/or prepend to add new elements to the DOM.
+//created and appened 3 list items for each list
+for (let i = 0; i < 3; i++) {
+  let li1 = document.createElement('li');
+  let li2 = document.createElement('li');
+  ordered.appendChild(li1);
+  unordered.appendChild(li2);
+}
 // Use the DocumentFragment interface or HTML templating with the cloneNode method to create templated content. 
 
 // Modify the HTML or text content of at least one element in response to user interaction using innerHTML, innerText, or textContent.
 
 // Modify the style and/or CSS classes of an element in response to user interactions using the style or classList properties.
-
+// mainEl.style.backgroundColor = "light Blue";
+// body.style.backgroundColor  = "Green";
 
 // Modify at least one attribute of an element in response to user interaction.
 
 // Register at least two different event listeners and create the associated event handler functions.
 
 // Use at least two Browser Object Model (BOM) properties or methods.
-
+//
 // Include at least one form and/or input with HTML attribute validation.
 
 // Include at least one form and/or input with DOM event-based validation. (This can be the same form or input as the one above, but should include event-based validation in addition to the HTML attribute validation.)

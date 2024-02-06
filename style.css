@@ -1,7 +1,7 @@
 body {
   margin: 0;
   font-family: Arial, sans-serif;
-  background-color: #b08968;
+  /* background-color: beige; */
 }
 
 header {
@@ -13,13 +13,28 @@ header {
   width: 100%;
 }
 
+#mainpage {
+  display: flex;  
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 20px;
+}
+
+/* Add your custom styling for each section */
+#mainpage > div {
+  display: flex;
+  background-color: #82a6b1;
+  border: 1px solid;
+  padding: 20px;
+  margin: 10px;
+}
+
 nav {
   display: flex;
   justify-content: center;
   padding: 0.5em;
-  /* background-color: #b07156; */
+  background-color: "ligh blue";
 }
-
 nav a {
   color: black;
   text-decoration: none;
@@ -27,8 +42,9 @@ nav a {
   margin: 0 1em;
 }
 
+
 main {
-  display: flex;
+  flex: 1;
   flex-wrap: wrap;
   justify-content: space-evenly;
   padding: 1em;
